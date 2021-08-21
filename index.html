@@ -1,31 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- asi se coloca icono de pestaña -->
-    <link rel="icon" href="./image/FirmaW.ico">
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- asi se coloca icono de pestaña -->
+    <link rel="icon" href="./image/FirmaW.ico">
     <title>Formulario de Registro</title>
 </head>
 
 <body>
 
+    <nav>
+        <div class="nav-wrapper brown">
+            <a href="..." class="brand-logo left"> <img
+                    src="https://academiageek.co/wp-content/uploads/2021/03/Logo-AG-2021.png" width="85px" height="55px"
+                    alt=""></a><a href="" class="brand-logo right">¡Súmate a nuestra Academia de talentos Geek! </a>
+
+        </div>
+    </nav>
+
+    <!-- class="section" es para un margen arriba y abajo -->
+    <br>
 
 
+    <div class="container">
+        <div class="row ">
+            <div class="carousel col s6 left">
+                <a class="carousel-item" href="#one!"><img
+                        src="https://blog.facialix.com/wp-content/uploads/2021/04/2-2.jpg"></a>
+                <a class="carousel-item" href="#two!"><img
+                        src="https://s3-us-west-2.amazonaws.com/devcodepro/media/tutorials/instalacion-de-nodejs-en-ubuntu-t1.jpg"></a>
+                <a class="carousel-item" href="#three!"><img
+                        src="https://proyectoa.com/wp-content/uploads/2008/09/mysql.jpg"></a>
+                <a class="carousel-item" href="#four!"><img
+                        src="https://edteam-media.s3.amazonaws.com/courses/original/61e5a210-8dab-412e-a6dc-802c070cc18c.jpg"></a>
+                <a class="carousel-item" href="#five!"><img
+                        src="https://kinsta.com/es/wp-content/uploads/sites/8/2018/05/qu%C3%A9-es-github-1.png"> </a>
+
+            </div>
+
+            <form class="col s5 right grey darken-4">
+                <div class="row">
+                    <div class="input-field col s6 ">
+                        <input id="first_name" type="text" required class="validate">
+                        <label for="first_name" class="text-white">Nombre</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" required class="validate">
+                        <label for="last_name">Apellidos</label>
+                    </div>
+                </div>
 
 
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="tel" required class="validate">
+                        <label for="tel">Numero de Celular</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" required class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">location_city</i>
+                                <input type="text" id="autocomplete-input" required class="autocomplete">
+                                <label for="autocomplete-input" required>Ciudad</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form action="#">
+                    <label required for="">Genero</label>
+                    <p><label><input type="checkbox" /><span>Mujer</span></label>
+                    </p>
+                    <p><label><input type="checkbox" /><span>Hombre</span>
+                        </label></p>
 
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix2">Expectativas con nosotros</label>
+                        </div>
+                    </div>
+                    <div class="container section centered left ">
+                        <button class="btn waves-effect waves-light" type="button" onclick="registro()" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </form>
+                <h1 class=" centered white-text bordered">¡Academia Geek Ser+Capaces!</h1>
+        </div>
+    </div>
     <script src="./script/index.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>
